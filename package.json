@@ -1,5 +1,5 @@
 {
-  "name": "launchstore",
+  "name": "launchstore-project",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,12 +9,6 @@
     "dev": "npm-run-all -p nodemon browsersync",
     "nodemon": "nodemon src/server.js",
     "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public, views'"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
